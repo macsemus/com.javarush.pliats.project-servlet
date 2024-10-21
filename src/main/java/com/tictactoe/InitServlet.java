@@ -24,7 +24,7 @@ public class InitServlet extends HttpServlet {
         // Получение списка значений поля
         List<Sign> data = field.getFieldData();
 
-        // Добавление в сессию параметров поля (нужно будет для хранения состояния между запросами)
+        // Добавление с сессию параметров поля (нужно будет для хранения состояния между запросами)
         currentSession.setAttribute("field", field);
         // и значений поля, отсортированных по индексу (нужно для отрисовки крестиков и ноликов)
         currentSession.setAttribute("data", data);
